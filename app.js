@@ -272,7 +272,7 @@ btn6_plus.addEventListener("click", function () {
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	let total_price_input = total_price()
+	let total_price_input = `${total_price()}`
 	tg.sendData(total_price_input);
 });
 
